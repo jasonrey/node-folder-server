@@ -20,7 +20,7 @@ const app = express()
 
 app.disable('X-Powered-By')
 app.set('view engine', 'pug')
-app.set('views', './src/pug')
+app.set('views', `${__dirname}/src/pug`)
 
 app.use((req, res, next) => {
   const reqPath = path.resolve(target, `./${req.url}`)
