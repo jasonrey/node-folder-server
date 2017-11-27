@@ -13,3 +13,8 @@ It is recommended to install on global to use `folderserver` command anywhere.
 For CLI options, use the -h (or --help) argument:
 
 `folderserver -h`
+
+## Todo
+
+- Support HTTPS
+- Custom template
