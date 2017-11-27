@@ -2,6 +2,8 @@ doctype html
 html
   head
   body
+    h1=url
     ul
       each item in items
-        li=item
+        li
+          a(href=path + '/' + item)=item

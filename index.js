@@ -39,6 +39,8 @@ app.use((req, res, next) => {
     const items = fs.readdirSync(reqPath)
 
     res.render('dir', {
+      url: req.url,
+      path: req.url === '/' ? '' : req.url,
       items
     })
 
